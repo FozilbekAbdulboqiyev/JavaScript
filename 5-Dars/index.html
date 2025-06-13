@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chipta narxi</title>
+</head>
+<body>
+  <script>
+    let yosh = parseInt(prompt("Yoshingizni kiriting"));
+    let talaba = prompt("Talabamisiz? (ha /yo'q):");
+
+    let narx;
+
+    if (yosh < 18 || talaba === "ha") {
+      narx = 5000;
+    } else {
+      narx = 10000;
+    }
+
+    console.log(narx + " so'm");
+  </script>
+</body>
+</html>
