@@ -12,21 +12,20 @@
 // getDate.call(arr)
 //========================================================================================================
 let obj = {
-    name:"Eshmat",
-    Age:20,
-    status:"Talaba",
-    
+    people: [
+        { name: "Ali", age: 25 },
+        { name: "Vali", age: 30 },
+        { name: "Eshmat", age: 20 }
+    ]
+};
+
+let total = 0;
+
+function calculateAges() {
+    this.people.forEach(person => {
+        total += person.age;
+    });
 }
 
-let total = 0
-
-function twise(){
-    let a= this
-    total+=obj?.Age
-    console.log(this);
-    a.person.forEach(person => {
-    calculate(person);
-      });
-}
-twise.call(obj)
-console.log(total);
+calculateAges.call(obj);
+console.log(total); // 75 bo'ladi
