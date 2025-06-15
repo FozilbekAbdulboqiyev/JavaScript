@@ -21,11 +21,11 @@ let obj = {
 
 let total = 0;
 
-function calculateAges() {
+function getDate() {
     this.people.forEach(person => {
         total += person.age;
     });
 }
 
-calculateAges.call(obj);
-console.log(total); // 75 bo'ladi
+getDate.call(obj);
+console.log(total)
