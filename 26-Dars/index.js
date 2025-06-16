@@ -93,10 +93,16 @@
 // let obj = { num: 6 };
 // kub.bind(obj)()
 // ====================================================================================
-function add(a,b){
-    console.log(this.base + a +b);
-}
-let obj= {base:10}
-let plus = add.bind(obj)
-plus(3 , 7)
+// function add(a,b){
+//     console.log(this.base + a +b);
+// }
+// let obj= {base:10}
+// let plus = add.bind(obj)
+// plus(3 , 7)
 //===================================================================================
+let person ={name:"GUlmat"}
+function salom(massage){
+    console.log(this.name+","+massage);
+}
+let hi =salom.bind(person)
+hi("Salom" + "," + "Ishlar qaley")
