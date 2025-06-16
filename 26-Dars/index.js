@@ -86,10 +86,17 @@
 // showAge.apply(user); 
 //====================================================================================
 // Function band
-function kub() {
-    console.log(this.num * 3);
-}
+// function kub() {
+//     console.log(this.num * 3);
+// }
 
-let obj = { num: 6 };
-kub.bind(obj)()
+// let obj = { num: 6 };
+// kub.bind(obj)()
 // ====================================================================================
+function add(a,b){
+    console.log(this.base + a +b);
+}
+let obj= {base:10}
+let plus = add.bind(obj)
+plus(3 , 7)
+//===================================================================================
