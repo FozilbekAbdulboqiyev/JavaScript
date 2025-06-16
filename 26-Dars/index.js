@@ -86,6 +86,7 @@
 // showAge.apply(user); 
 //====================================================================================
 // Function band
+//===================================================================================
 // function kub() {
 //     console.log(this.num * 3);
 // }
@@ -107,8 +108,14 @@
 // let hi =salom.bind(person)
 // hi("Salom" + "," + "Ishlar qaley")
 //==================================================================================
-function add (){
-    console.log(this.age >=18?"Katta yoshda":"Voyaga yetmagan");
+// function add (){
+//     console.log(this.age >=18?"Katta yoshda":"Voyaga yetmagan");
+// }
+// let person={age:15}
+// add.bind(person)()
+//==================================================================================
+let obj={text:"assalomualeykum"}
+function big(){
+    console.log(this.text.toUpperCase());
 }
-let person={age:15}
-add.bind(person)()
+big.bind(obj)()
