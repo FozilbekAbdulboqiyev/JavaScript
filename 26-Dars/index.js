@@ -100,9 +100,15 @@
 // let plus = add.bind(obj)
 // plus(3 , 7)
 //===================================================================================
-let person ={name:"GUlmat"}
-function salom(massage){
-    console.log(this.name+","+massage);
+// let person ={name:"GUlmat"}
+// function salom(massage){
+//     console.log(this.name+","+massage);
+// }
+// let hi =salom.bind(person)
+// hi("Salom" + "," + "Ishlar qaley")
+//==================================================================================
+function add (){
+    console.log(this.age >=18?"Katta yoshda":"Voyaga yetmagan");
 }
-let hi =salom.bind(person)
-hi("Salom" + "," + "Ishlar qaley")
+let person={age:15}
+add.bind(person)()
