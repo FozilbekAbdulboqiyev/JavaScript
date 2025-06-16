@@ -114,8 +114,8 @@
 // let person={age:15}
 // add.bind(person)()
 //==================================================================================
-let obj={text:"assalomualeykum"}
-function big(){
-    console.log(this.text.toUpperCase());
-}
-big.bind(obj)()
+// let obj={text:"assalomualeykum"}
+// function big(){
+//     console.log(this.text.toUpperCase());
+// }
+// big.bind(obj)()
