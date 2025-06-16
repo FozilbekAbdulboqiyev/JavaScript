@@ -71,16 +71,25 @@
 // let obj = { num: 7 };
 // kvadrat.apply(obj);
 // //============================================================================================
-// function decorateSymbol(symbol) {
-//     console.log(symbol + this.text + symbol);
+// function Symvols(symvol) {
+//     console.log(symvol + this.text + symvol);
 // }
 
 // let obj = { text: "JavaScript" };
-// decorateSymbol.apply(obj, ["  3oy  "]); 
+// Symvol.apply(obj, ["  3oy  "]); 
 //====================================================================================
-function showAge() {
-    console.log("Yosh: " + this.age);
+// function showAge() {
+//     console.log("Yosh: " + this.age);
+// }
+
+// let user = { age: 19 };
+// showAge.apply(user); 
+//====================================================================================
+// Function band
+function kub() {
+    console.log(this.num * 3);
 }
 
-let user = { age: 19 };
-showAge.apply(user); 
+let obj = { num: 6 };
+kub.bind(obj)()
+// ====================================================================================
