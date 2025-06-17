@@ -22,4 +22,5 @@ console.log(obj)
 Object.defineProperty(newobj.child,"name",{
    enumerable:false 
 })
+console.log(newobj);
 
