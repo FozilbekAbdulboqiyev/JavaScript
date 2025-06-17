@@ -19,4 +19,7 @@ let obj = {
 
 let newonj=Object.defineProperties({},Object.getOwnPropertyDescriptors(obj))
 console.log(obj)
+Object.defineProperty(newobj.child,"name",{
+   enumerable:false 
+})
 
