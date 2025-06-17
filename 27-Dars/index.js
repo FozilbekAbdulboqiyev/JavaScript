@@ -18,4 +18,5 @@ let obj = {
 // console.log(newObj);
 
 let newonj=Object.defineProperties({},Object.getOwnPropertyDescriptors(obj))
+console.log(obj)
 
