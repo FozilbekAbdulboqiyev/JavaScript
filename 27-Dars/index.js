@@ -6,14 +6,16 @@ let obj = {
         Age:10
     },
 }
-let newObj=Object.defineProperties({},Object.getOwnPropertyDescriptors(obj))
-// console.log(obj);
- Object.defineProperty(newObj.child,"name", {
- writable:false,
- configurable:false,
+// let newObj=Object.defineProperties({},Object.getOwnPropertyDescriptors(obj))
+// // console.log(obj);
+//  Object.defineProperty(newObj.child,"name", {
+//  writable:false,
+//  configurable:false,
 
-}
-)
-newObj.child.name = "Vali"
-console.log(newObj);
+// }
+// )
+// newObj.child.name = "Vali"
+// console.log(newObj);
+
+let newonj=Object.defineProperties({},Object.getOwnPropertyDescriptors(obj))
 
