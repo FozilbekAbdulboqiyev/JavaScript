@@ -27,6 +27,10 @@
 // let musbat=sonlar.find(son => son > 0);
 // console.log(musbat);
 //findindex bu shartga mos keladigan birinchi leemntni indexsini qaytaradi;
+// let sonlar=[-1,0,3,9]
+// let musbat=sonlar.findIndex(son => son < 0);
+// console.log(musbat);
+//Findlastindex bu shartga moskelgan elemntni oxirgi indexsini chiqaradi
 let sonlar=[-1,0,3,9]
-let musbat=sonlar.findIndex(son => son < 0);
+let musbat=sonlar.findLastIndex(son => son < 2);
 console.log(musbat);
