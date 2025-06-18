@@ -23,7 +23,10 @@
 // });
 // console.log(musbat);
 //find bu shartga ,mos kelganlarni birinchisini qaytaradi
+// let sonlar=[-1,0,3,9]
+// let musbat=sonlar.find(son => son > 0);
+// console.log(musbat);
+//findindex bu shartga mos keladigan birinchi leemntni indexsini qaytaradi;
 let sonlar=[-1,0,3,9]
-let musbat=sonlar.find(son => son > 0);
+let musbat=sonlar.findIndex(son => son < 0);
 console.log(musbat);
-
