@@ -16,7 +16,7 @@
 //     return son*2
 // })
 // console.log(newNumber);
-
+//filter bu sharga mos keladigan elemntlarni  yangi arry ga qaytaradi
 let sonlar=[-5,-4,-3,-2,-1,0,1,2,3,4,5]
 let musbat=sonlar.filter(function(son){
     return son > 0;
