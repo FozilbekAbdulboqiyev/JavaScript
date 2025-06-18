@@ -11,8 +11,15 @@
     
 // })
 //map ham foreachga oxshaydi
-let sonlar=[1,2,3,4,5];
-let newNumber =sonlar.map(function(son){
-    return son*2
-})
-console.log(newNumber);
+// let sonlar=[1,2,3,4,5];
+// let newNumber =sonlar.map(function(son){
+//     return son*2
+// })
+// console.log(newNumber);
+
+let sonlar=[-5,-4,-3,-2,-1,0,1,2,3,4,5]
+let musbat=sonlar.filter(function(son){
+    return son > 0;
+});
+console.log(musbat);
+
