@@ -58,4 +58,6 @@
 // let arr =[1,2,3,4,5,6]
 // arr.copyWithin(0,3,5)
 // console.log(arr);
-
+let arr =[1,2,3,4,5];
+arr.fill(7)
+console.log(arr);
