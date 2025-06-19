@@ -62,8 +62,14 @@
 // arr.fill(7)
 // console.log(arr);
 
-let sonlar=[-5,-4,-3,-2,-1,0,1,2,3,4,5]
-let manfiy=sonlar.filter(function(son){
-    return son < 0;
-});
-console.log(manfiy);
+// let sonlar=[-5,-4,-3,-2,-1,0,1,2,3,4,5]
+// let manfiy=sonlar.filter(function(son){
+//     return son < 0;
+// });
+// console.log(manfiy);
+
+let obj=["Ali","Eshmat","Gulmat","Toshmat","Bahridin","Muxriddin"]
+obj.forEach(function(ism,index){
+    console.log(index + ':'+ism);
+    
+})
