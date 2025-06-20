@@ -76,11 +76,20 @@
 
 //crud
 //creat arr ga yangi malumot qo'shish
+// let user=[
+//     {id:1, name:"Ali",age:25,},
+//     {id:2, name:"Gulamt",age:35,}
+// ]
+// let newuser={id:3, name:"Eshmat",age:17,};
+// user.push(newuser);
+// console.log(user);
+//Read foydalanuchini ko'rish yoki saralash
 let user=[
     {id:1, name:"Ali",age:25,},
-    {id:2, name:"Gulamt",age:35,}
+    {id:2, name:"Gulamt",age:35,},
+    {id:2, name:"Gulamt",age:17,},
+    {id:2, name:"Gulamt",age:60,},
+    {id:2, name:"Gulamt",age:45,}
 ]
-let newuser={id:3, name:"Eshmat",age:17,};
-user.push(newuser);
-console.log(user);
-
+let newArr =user.filter(user => user.age >25);
+console.log(newArr);
