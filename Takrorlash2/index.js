@@ -94,6 +94,18 @@
 // let newArr =user.filter(user => user.age >25);
 // console.log(newArr);
 //Update foydalanuvchi malumotini o'zgartirish
+// let user=[
+//     {id:1, name:"Ali",age:25,},
+//     {id:2, name:"Gulamat",age:35,},
+//     {id:3, name:"Eshmat",age:17,},
+//     {id:4, name:"Gulshan",age:60,},
+//     {id:5, name:"Gulbashakar",age:45,}
+// ]
+// user=user.map(user=>
+//     user.id ===2?{...user,name:"Aziz"}:user
+// )
+// console.log(user);
+//Delete arrdan foydalanuchi malumotini o'chirish
 let user=[
     {id:1, name:"Ali",age:25,},
     {id:2, name:"Gulamat",age:35,},
@@ -101,7 +113,5 @@ let user=[
     {id:4, name:"Gulshan",age:60,},
     {id:5, name:"Gulbashakar",age:45,}
 ]
-user=user.map(user=>
-    user.id ===2?{...user,name:"Aziz"}:user
-)
+user=user.filter(user=>user.id!==1)
 console.log(user);
