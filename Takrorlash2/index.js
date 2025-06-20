@@ -68,8 +68,19 @@
 // });
 // console.log(manfiy);
 
-let arr=["Ali","Eshmat","Gulmat","Toshmat","Bahridin","Muxriddin"]
-arr.forEach(function(ism,index){
-    console.log(index + ':'+ism);
+// let arr=["Ali","Eshmat","Gulmat","Toshmat","Bahridin","Muxriddin"]
+// arr.forEach(function(ism,index){
+//     console.log(index + ':'+ism);
     
-})
+// })
+
+//crud
+//creat arr ga yangi malumot qo'shish
+let user=[
+    {id:1, name:"Ali",age:25,},
+    {id:2, name:"Gulamt",age:35,}
+]
+let newuser={id:3, name:"Eshmat",age:17,};
+user.push(newuser);
+console.log(user);
+
