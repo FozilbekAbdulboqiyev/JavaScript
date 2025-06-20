@@ -68,8 +68,8 @@
 // });
 // console.log(manfiy);
 
-let obj=["Ali","Eshmat","Gulmat","Toshmat","Bahridin","Muxriddin"]
-obj.forEach(function(ism,index){
+let arr=["Ali","Eshmat","Gulmat","Toshmat","Bahridin","Muxriddin"]
+arr.forEach(function(ism,index){
     console.log(index + ':'+ism);
     
 })
