@@ -84,12 +84,24 @@
 // user.push(newuser);
 // console.log(user);
 //Read foydalanuchini ko'rish yoki saralash
+// let user=[
+//     {id:1, name:"Ali",age:25,},
+//     {id:2, name:"Gulamt",age:35,},
+//     {id:2, name:"Gulamt",age:17,},
+//     {id:2, name:"Gulamt",age:60,},
+//     {id:2, name:"Gulamt",age:45,}
+// ]
+// let newArr =user.filter(user => user.age >25);
+// console.log(newArr);
+//Update foydalanuvchi malumotini o'zgartirish
 let user=[
     {id:1, name:"Ali",age:25,},
-    {id:2, name:"Gulamt",age:35,},
-    {id:2, name:"Gulamt",age:17,},
-    {id:2, name:"Gulamt",age:60,},
-    {id:2, name:"Gulamt",age:45,}
+    {id:2, name:"Gulamat",age:35,},
+    {id:3, name:"Eshmat",age:17,},
+    {id:4, name:"Gulshan",age:60,},
+    {id:5, name:"Gulbashakar",age:45,}
 ]
-let newArr =user.filter(user => user.age >25);
-console.log(newArr);
+user=user.map(user=>
+    user.id ===2?{...user,name:"Aziz"}:user
+)
+console.log(user);
