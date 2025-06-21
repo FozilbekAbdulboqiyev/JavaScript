@@ -144,3 +144,13 @@ function fib(n){
     }
 }
 console.log(fib(5));
+// 2-------------------------------------------------------------------------------------------------------------------------------
+function sumDigits(n){
+    if(n===0)return 0
+    else{
+        return (n % 10)+sumDigits(Math.floor(n/10 ));
+    }
+    
+
+}
+console.log(sumDigits(1234));
