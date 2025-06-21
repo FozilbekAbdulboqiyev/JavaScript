@@ -115,3 +115,4 @@ let user=[
 ]
 user=user.filter(user=>user.id!==1)
 console.log(user);
+//====================================================
