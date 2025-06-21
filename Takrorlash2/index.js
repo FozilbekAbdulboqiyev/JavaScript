@@ -116,3 +116,20 @@ let user=[
 user=user.filter(user=>user.id!==1)
 console.log(user);
 //====================================================
+let nestedArr = [[1, 2, [3, 4, [5, 6]]]];
+
+let NewArr = []
+function GetNesArr(arr) {
+  for (val of arr) {
+    if (val) {
+      NewArr+=[[val]]
+    } else {
+      console.log(`Bu Arr`)
+    }
+  }
+}
+GetNesArr(nestedArr)
+console.log(NewArr);
+
+
+// NewArr = 1,2,3,4,5,6 Kelyapti
