@@ -163,3 +163,12 @@ let user=[
 ]
 let newArr =user.filter(user => user.age >25);
 console.log(newArr);
+let str = "Oxford2025";
+let oxf = "";
+
+for (let i = 0; i < str.length;) {
+  if (isNaN(str[i])) {
+    oxf += str[i];
+  }
+  i++
+}
