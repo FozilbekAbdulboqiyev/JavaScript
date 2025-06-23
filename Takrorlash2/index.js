@@ -153,7 +153,6 @@
     
 
 // }
-console.log(sumDigits(1234));
 let user=[
     {id:1, name:"Ali",age:25,},
     {id:2, name:"Gulamt",age:35,},
@@ -172,3 +171,14 @@ for (let i = 0; i < str.length;) {
   }
   i++
 }
+let  date = new Date ()
+let month = [
+    "Yanvar",
+    "Fevral",
+    "Mart",
+    "Aprel",
+    "May",
+    "Iyun"
+]
+date = month
+console.log(date);
