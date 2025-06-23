@@ -106,51 +106,60 @@
 // )
 // console.log(user);
 //Delete arrdan foydalanuchi malumotini o'chirish
-let user=[
-    {id:1, name:"Ali",age:25,},
-    {id:2, name:"Gulamat",age:35,},
-    {id:3, name:"Eshmat",age:17,},
-    {id:4, name:"Gulshan",age:60,},
-    {id:5, name:"Gulbashakar",age:45,}
-]
-user=user.filter(user=>user.id!==1)
-console.log(user);
-//====================================================
-let nestedArr = [[1, 2, [3, 4, [5, 6]]]];
+// let user=[
+//     {id:1, name:"Ali",age:25,},
+//     {id:2, name:"Gulamat",age:35,},
+//     {id:3, name:"Eshmat",age:17,},
+//     {id:4, name:"Gulshan",age:60,},
+//     {id:5, name:"Gulbashakar",age:45,}
+// ]
+// user=user.filter(user=>user.id!==1)
+// console.log(user);
+// //====================================================
+// let nestedArr = [[1, 2, [3, 4, [5, 6]]]];
 
-let NewArr = []
-function GetNesArr(arr) {
-  for (val of arr) {
-    if (val) {
-      NewArr+=[[val]]
-    } else {
-      console.log(`Bu Arr`)
-    }
-  }
-}
-GetNesArr(nestedArr)
-console.log(NewArr);
+// let NewArr = []
+// function GetNesArr(arr) {
+//   for (val of arr) {
+//     if (val) {
+//       NewArr+=[[val]]
+//     } else {
+//       console.log(`Bu Arr`)
+//     }
+//   }
+// }
+// GetNesArr(nestedArr)
+// console.log(NewArr);
 
 
-// NewArr = 1,2,3,4,5,6 Kelyapti
-// 1-----------------------------------------------------------------------------------------------------------------
-function fib(n){
-    if (n===0)return 0
-    else if(n===1){
-        return 1
-    }
-    else{
-        return fib (n -1)+fib(n-2)
-    }
-}
-console.log(fib(5));
-// 2-------------------------------------------------------------------------------------------------------------------------------
-function sumDigits(n){
-    if(n===0)return 0
-    else{
-        return (n % 10)+sumDigits(Math.floor(n/10 ));
-    }
+// // NewArr = 1,2,3,4,5,6 Kelyapti
+// // 1-----------------------------------------------------------------------------------------------------------------
+// function fib(n){
+//     if (n===0)return 0
+//     else if(n===1){
+//         return 1
+//     }
+//     else{
+//         return fib (n -1)+fib(n-2)
+//     }
+// }
+// console.log(fib(5));
+// // 2-------------------------------------------------------------------------------------------------------------------------------
+// function sumDigits(n){
+//     if(n===0)return 0
+//     else{
+//         return (n % 10)+sumDigits(Math.floor(n/10 ));
+//     }
     
 
-}
+// }
 console.log(sumDigits(1234));
+let user=[
+    {id:1, name:"Ali",age:25,},
+    {id:2, name:"Gulamt",age:35,},
+    {id:2, name:"Gulamt",age:17,},
+    {id:2, name:"Gulamt",age:60,},
+    {id:2, name:"Gulamt",age:45,}
+]
+let newArr =user.filter(user => user.age >25);
+console.log(newArr);
