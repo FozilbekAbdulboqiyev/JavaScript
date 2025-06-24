@@ -26,12 +26,12 @@ console.log(str6);
 
 let str =`oxfordit` 
 str.includes()===`oxfordit`?console.log(true):console.log(folse);
-let str = "Oxford2025";
+let str1 = "Oxford2025";
 let oxf = "";
 
-for (let i = 0; i < str.length;) {
-  if (isNaN(str[i])) {
-    oxf += str[i];
+for (let i = 0; i < str1.length;) {
+  if (isNaN(str1[i])) {
+    oxf += str1[i];
   }
   i++
 }
