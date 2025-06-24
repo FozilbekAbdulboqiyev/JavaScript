@@ -153,32 +153,46 @@
     
 
 // }
-let user=[
-    {id:1, name:"Ali",age:25,},
-    {id:2, name:"Gulamt",age:35,},
-    {id:2, name:"Gulamt",age:17,},
-    {id:2, name:"Gulamt",age:60,},
-    {id:2, name:"Gulamt",age:45,}
-]
-let newArr =user.filter(user => user.age >25);
-console.log(newArr);
-let str = "Oxford2025";
-let oxf = "";
+// let user=[
+//     {id:1, name:"Ali",age:25,},
+//     {id:2, name:"Gulamt",age:35,},
+//     {id:2, name:"Gulamt",age:17,},
+//     {id:2, name:"Gulamt",age:60,},
+//     {id:2, name:"Gulamt",age:45,}
+// ]
+// let newArr =user.filter(user => user.age >25);
+// console.log(newArr);
+// let str = "Oxford2025";
+// let oxf = "";
 
-for (let i = 0; i < str.length;) {
-  if (isNaN(str[i])) {
-    oxf += str[i];
+// for (let i = 0; i < str.length;) {
+//   if (isNaN(str[i])) {
+//     oxf += str[i];
+//   }
+//   i++
+// }
+// let  date = new Date ()
+// let month = [
+//     "Yanvar",
+//     "Fevral",
+//     "Mart",
+//     "Aprel",
+//     "May",
+//     "Iyun"
+// ]
+// date = month
+// console.log(date);
+let str = "Webbrain Academy";
+let sum = 0;
+
+for (let i = 0; i < str.length; i++) {
+  
+  if (
+    (str[i] >= 'A' && str[i] <= 'Z') || 
+    (str[i] >= 'a' && str[i] <= 'z')
+  ) {
+    sum += 1; 
   }
-  i++
 }
-let  date = new Date ()
-let month = [
-    "Yanvar",
-    "Fevral",
-    "Mart",
-    "Aprel",
-    "May",
-    "Iyun"
-]
-date = month
-console.log(date);
+
+console.log("Harflar :", sum);
