@@ -10,7 +10,7 @@ obj={
       } else console.log(` Now`);
       
   }
-  
+
   let str3 = `WebBrain`
 console.log(str3.slice(0, 5)); 
 
@@ -26,3 +26,12 @@ console.log(str6);
 
 let str =`oxfordit` 
 str.includes()===`oxfordit`?console.log(true):console.log(folse);
+let str = "Oxford2025";
+let oxf = "";
+
+for (let i = 0; i < str.length;) {
+  if (isNaN(str[i])) {
+    oxf += str[i];
+  }
+  i++
+}
