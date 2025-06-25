@@ -206,15 +206,20 @@
 // console.log(json);
 
 
-console.log("Start");
-setTimeout(() => {
-console.log("setTimeout - 1");
-}, 1000);
-for (let i = 0; i < 10; i++) {
-console.log(i);
-}
+// console.log("Start");
+// setTimeout(() => {
+// console.log("setTimeout - 1");
+// }, 1000);
+// for (let i = 0; i < 10; i++) {
+// console.log(i);
+// }
 
-setTimeout(() => {
-console.log("setTimeout - 2"); 
-}, 0);
-console.log("End"); 
+// setTimeout(() => {
+// console.log("setTimeout - 2"); 
+// }, 0);
+// console.log("End"); 
+
+let user ={name:"Ali",age:25};
+let {name, age}=user
+console.log(name);
+
