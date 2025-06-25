@@ -249,13 +249,24 @@
 // let arr = [1, 2, 3];
 // let doubled = arr.map(num => num * 2);
 // console.log(doubled); // [2, 4, 6]
+// let people = [
+//   { id: 1, name: "Eshmat", age: 20, status: "student" },
+//   { id: 2, name: "Toshmat", age: 22, status: "student" },
+//   { id: 3, name: "Ali", age: 17, status: "o'quvchi" },
+//   { id: 4, name: "Vali", age: 25, status: "student" }
+// ];
+
+// people.sort((a, b) => a.name.localeCompare(b.name));
+
+// console.log(people);
 let people = [
   { id: 1, name: "Eshmat", age: 20, status: "student" },
   { id: 2, name: "Toshmat", age: 22, status: "student" },
   { id: 3, name: "Ali", age: 17, status: "o'quvchi" },
-  { id: 4, name: "Vali", age: 25, status: "student" }
+  { id: 4, name: "Vali", age: 25, status: "student" },
+  { id: 5, name: "Sali", age: 35, status: "ishchi" },
 ];
 
-people.sort((a, b) => a.name.localeCompare(b.name));
+people.sort((a, b) => a.age - b.age);
 
 console.log(people);
