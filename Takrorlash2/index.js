@@ -197,10 +197,24 @@
 
 // console.log("Harflar :", sum);
 
-let str ='{"name":"Ali","Age":"25"}'
-let obj=JSON.parse(str)
-console.log(obj.name);
-//=========================================
-let user = {name:"Ali", age:25};
-let json =JSON.stringify(user)
-console.log(json);
+// let str ='{"name":"Ali","Age":"25"}'
+// let obj=JSON.parse(str)
+// console.log(obj.name);
+// //=========================================
+// let user = {name:"Ali", age:25};
+// let json =JSON.stringify(user)
+// console.log(json);
+
+
+console.log("Start");
+setTimeout(() => {
+console.log("setTimeout - 1");
+}, 1000);
+for (let i = 0; i < 10; i++) {
+console.log(i);
+}
+
+setTimeout(() => {
+console.log("setTimeout - 2"); 
+}, 0);
+console.log("End"); 
