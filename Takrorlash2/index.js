@@ -223,3 +223,9 @@ let user ={name:"Ali",age:25};
 let {name, age}=user
 console.log(name);
 
+let numbers = [10, 20, 30];
+
+let [a, b] = numbers;
+
+console.log(a); // 10
+console.log(b); // 20
