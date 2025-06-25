@@ -230,14 +230,19 @@
 // console.log(a); // 10
 // console.log(b); // 20
 
-let people = [
-  { id: 1, name: "Eshmat", age: 20, status: "student" },
-  { id: 2, name: "Toshmat", age: 22, status: "student" },
-  { id: 3, name: "Ali", age: 17, status: "o'quvchi" },
-  { id: 4, name: "Vali", age: 25, status: "student" },
-  { id: 5, name: "Sali", age: 35, status: "ishchi" },
-];
+// let people = [
+//   { id: 1, name: "Eshmat", age: 20, status: "student" },
+//   { id: 2, name: "Toshmat", age: 22, status: "student" },
+//   { id: 3, name: "Ali", age: 17, status: "o'quvchi" },
+//   { id: 4, name: "Vali", age: 25, status: "student" },
+//   { id: 5, name: "Sali", age: 35, status: "ishchi" },
+// ];
 
-let students = people.filter(person => person.status === "student");
+// let students = people.filter(person => person.status === "student");
 
-console.log(students);
+// console.log(students);
+
+let arr = [1, 2, 3];
+arr.forEach(num => {
+  console.log(num * 2);  // faqat konsolga chiqaradi
+});
