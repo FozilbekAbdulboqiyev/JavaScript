@@ -200,3 +200,7 @@
 let str ='{"name":"Ali","Age":"25"}'
 let obj=JSON.parse(str)
 console.log(obj.name);
+//=========================================
+let user = {name:"Ali", age:25};
+let json =JSON.stringify(user)
+console.log(json);
