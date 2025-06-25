@@ -242,7 +242,10 @@
 
 // console.log(students);
 
+// let arr = [1, 2, 3];
+// arr.forEach(num => {
+//   console.log(num * 2);  // faqat konsolga chiqaradi
+// });
 let arr = [1, 2, 3];
-arr.forEach(num => {
-  console.log(num * 2);  // faqat konsolga chiqaradi
-});
+let doubled = arr.map(num => num * 2);
+console.log(doubled); // [2, 4, 6]
