@@ -219,13 +219,25 @@
 // }, 0);
 // console.log("End"); 
 
-let user ={name:"Ali",age:25};
-let {name, age}=user
-console.log(name);
+// let user ={name:"Ali",age:25};
+// let {name, age}=user
+// console.log(name);
 
-let numbers = [10, 20, 30];
+// let numbers = [10, 20, 30];
 
-let [a, b] = numbers;
+// let [a, b] = numbers;
 
-console.log(a); // 10
-console.log(b); // 20
+// console.log(a); // 10
+// console.log(b); // 20
+
+let people = [
+  { id: 1, name: "Eshmat", age: 20, status: "student" },
+  { id: 2, name: "Toshmat", age: 22, status: "student" },
+  { id: 3, name: "Ali", age: 17, status: "o'quvchi" },
+  { id: 4, name: "Vali", age: 25, status: "student" },
+  { id: 5, name: "Sali", age: 35, status: "ishchi" },
+];
+
+let students = people.filter(person => person.status === "student");
+
+console.log(students);
