@@ -245,7 +245,17 @@
 // let arr = [1, 2, 3];
 // arr.forEach(num => {
 //   console.log(num * 2);  // faqat konsolga chiqaradi
-// });
-let arr = [1, 2, 3];
-let doubled = arr.map(num => num * 2);
-console.log(doubled); // [2, 4, 6]
+// // });
+// let arr = [1, 2, 3];
+// let doubled = arr.map(num => num * 2);
+// console.log(doubled); // [2, 4, 6]
+let people = [
+  { id: 1, name: "Eshmat", age: 20, status: "student" },
+  { id: 2, name: "Toshmat", age: 22, status: "student" },
+  { id: 3, name: "Ali", age: 17, status: "o'quvchi" },
+  { id: 4, name: "Vali", age: 25, status: "student" }
+];
+
+people.sort((a, b) => a.name.localeCompare(b.name));
+
+console.log(people);
