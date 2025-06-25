@@ -182,17 +182,21 @@
 // ]
 // date = month
 // console.log(date);
-let str = "Webbrain Academy";
-let sum = 0;
+// let str = "Webbrain Academy";
+// let sum = 0;
 
-for (let i = 0; i < str.length; i++) {
+// for (let i = 0; i < str.length; i++) {
   
-  if (
-    (str[i] >= 'A' && str[i] <= 'Z') || 
-    (str[i] >= 'a' && str[i] <= 'z')
-  ) {
-    sum += 1; 
-  }
-}
+//   if (
+//     (str[i] >= 'A' && str[i] <= 'Z') || 
+//     (str[i] >= 'a' && str[i] <= 'z')
+//   ) {
+//     sum += 1; 
+//   }
+// }
 
-console.log("Harflar :", sum);
+// console.log("Harflar :", sum);
+
+let str ='{"name":"Ali","Age":"25"}'
+let obj=JSON.parse(str)
+console.log(obj.name);
