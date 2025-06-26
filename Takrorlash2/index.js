@@ -271,3 +271,15 @@
 
 // console.log(people);
 //===========================================
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// let sum = arr.reduce((acc, curr) => acc + curr, 0);
+
+// console.log(sum); // 45
+// let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// // arr ni 5-elementdan boshlab o‘zgartiramiz
+// let newArr = arr2.splice(0, 4); 
+
+// console.log("arr:", arr2);      // [5, 6, 7, 8, 9]
+// console.log("newArr:", newArr); // [1, 2, 3, 4]
