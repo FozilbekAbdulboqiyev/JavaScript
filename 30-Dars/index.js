@@ -21,20 +21,36 @@
 // }
 // let obj = new Parent()
 // obj.getData()
-class Parent{
-    constructor(props){
-        this.fname=props;
-    }
+// class Parent{
+//     constructor(props){
+//         this.fname=props;
+//     }
 
-    get name(){
-        return this.fname.toUpperCase()
-    }
-    set name(newName){
-        if(newName.length> 5)this.fname =newName;
-        else this.name="Siz xato ism yubordiz"
+//     get name(){
+//         return this.fname.toUpperCase()
+//     }
+//     set name(newName){
+//         if(newName.length> 5)this.fname =newName;
+//         else this.name="Siz xato ism yubordiz"
+//     }
+// }
+// let user = new Parent("Eshmat")
+// console.log(user.name)
+// user.name ="Toshmat"
+// console.log(user.name)
+class Parent{
+    name = "Eshmat"
+
+    getName(){
+        console.log("Parent");
     }
 }
-let user = new Parent("Eshmat")
-console.log(user.name)
-user.name ="Toshmat"
-console.log(user.name)
+class Child extends Parent {
+   name ="Toshmat"
+   getFirstname(){
+    console.log("Child");
+    
+   }
+}
+let=Child=new Child()
+Child.getFirstname();
