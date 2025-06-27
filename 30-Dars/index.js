@@ -12,12 +12,29 @@
 // // console.log(user.name);
 // user.getName("Toshmat")
 //class dagi glabal o'zgaruvchi bu klass dan tashqarida elon qilingan o'zgaruvchi .Uni class ichida o'qish va o'zgartirish mumkin
-let count =0;
+// let count =0;
+// class Parent{
+//     getData(){
+//         count += 10;
+//         console.log(count)
+//     }
+// }
+// let obj = new Parent()
+// obj.getData()
 class Parent{
-    getData(){
-        count += 10;
-        console.log(count)
+    constructor(props){
+        this.fname=props;
+    }
+
+    get name(){
+        return this.fname.toUpperCase()
+    }
+    set name(newName){
+        if(newName.length> 5)this.fname =newName;
+        else this.name="Siz xato ism yubordiz"
     }
 }
-let obj = new Parent()
-obj.getData()
+let user = new Parent("Eshmat")
+console.log(user.name)
+user.name ="Toshmat"
+console.log(user.name)
