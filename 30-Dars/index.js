@@ -38,19 +38,32 @@
 // console.log(user.name)
 // user.name ="Toshmat"
 // console.log(user.name)
-class Parent{
-    name = "Eshmat"
+// class Parent{
+//     name = "Eshmat"
 
-    getName(){
-        console.log("Parent");
+//     getName(){
+//         console.log("Parent");
+//     }
+// }
+// class Child extends Parent {
+//    name ="Toshmat"
+//    getFirstname(){
+//     console.log("Child");
+    
+//    }
+// }
+// let=Child=new Child()
+// Child.getFirstname();
+class Animal {
+    speak(){
+      console.log("Hayvon tovush qicharyapti");
+      
     }
 }
-class Child extends Parent {
-   name ="Toshmat"
-   getFirstname(){
-    console.log("Child");
-    
-   }
+class Dog extends Animal{
+    speak(){
+        console.log("Vov-vov!");
+    }
 }
-let=Child=new Child()
-Child.getFirstname();
+let it =new Dog();
+it.speak();
