@@ -1,12 +1,21 @@
-class MyClass {
-    static myStaticVar = 'Bu static o‘zgaruvchi';
+// class MyClass {
+//     static myStaticVar = 'Bu static o‘zgaruvchi';
   
-    static myStaticMethod() {
-      console.log('Static method chaqirildi');
+//     static myStaticMethod() {
+//       console.log('Static method chaqirildi');
+//     }
+  
+//     instanceMethod() {
+//       console.log('Bu oddiy instance method');
+//     }
+//   }
+class Calculator {
+    static add(a, b) {
+      return a + b;
     }
   
-    instanceMethod() {
-      console.log('Bu oddiy instance method');
+    static subtract(a, b) {
+      return a - b;
     }
   }
   
