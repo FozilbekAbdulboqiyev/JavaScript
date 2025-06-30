@@ -18,4 +18,5 @@ class Calculator {
       return a - b;
     }
   }
-  
+  console.log(Calculator.add(5, 3));      // 8
+console.log(Calculator.subtract(10, 4)); // 6
