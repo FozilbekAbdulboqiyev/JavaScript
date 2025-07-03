@@ -12,5 +12,26 @@ class Clock {
   
   const clock = new Clock();
   clock.showTime();
-  
-  
+
+  class Car {
+  constructor(nomi) {
+    this.nomi = nomi;
+    this.tezlik = 0;
+  }
+
+  gazBos() {
+    this.tezlik += 10;
+  }
+
+  holat() {
+    console.log(`${this.nomi} hozir ${this.tezlik} km/h tezlikda`);
+  }
+}
+
+// Misol uchun:
+const mashina = new Car("Malibu");
+mashina.holat();   
+mashina.gazBos();
+mashina.holat();   
+mashina.gazBos();
+mashina.holat();   
