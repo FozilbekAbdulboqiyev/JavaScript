@@ -22,4 +22,4 @@ class Calculator {
 console.log(Calculator.subtract(10, 4)); // 6
 const calc = new Calculator();
 
-console.log(calc.add(1, 2)); // ❌ TypeError: calc.add is not a function
+console.log(calc.add(1, 2)); 
