@@ -32,3 +32,9 @@ console.log(newArr);
 // let mevalar=["olma","olma","banan"]
 // mevalar.forEach(function(meva,index){
 //     console.log(index + ':'+meva);
+
+// let sonlar=[1,2,3,4,5];
+// let newNumber =sonlar.map(function(son){
+//     return son*2
+// })
+// console.log(newNumber);
