@@ -22,3 +22,13 @@ function recFunction(arr) {
 }
 recFunction(nestedArr);
 console.log(newArr);
+//foreach--- bu array ichidagi harbir element ustida amal bajaradi
+// let sonlar =[1,2,3,4,5];
+// sonlar.forEach(function(son){
+//     console.log(son);
+    
+// })
+
+// let mevalar=["olma","olma","banan"]
+// mevalar.forEach(function(meva,index){
+//     console.log(index + ':'+meva);
