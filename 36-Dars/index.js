@@ -45,23 +45,7 @@ let webbrain = {
     },
 };
 
-function getData(data) {
-    let total = 0;
 
-    if (Array.isArray(data)) {
-        for (let valeu of data) {
-            total += valeu.price;
-        }
-    } else if (typeof data === "object") {
-        for (let key in data) {
-            total += getData(data[key]);
-        }
-    }
-
-    return total;
-}
-
-console.log(getData(webbrain));
 
 let getFunk = (curry) => {
     return (one) => {
