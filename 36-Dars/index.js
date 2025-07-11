@@ -1,8 +1,74 @@
-let getSumm=(a)=>{
-        while (Infinity) {
-            return(b)=>{
-                console.log(a+b);
-            }
+// let arr = [
+//     {name:"Eshmat",age:20},
+//     {name:"Eshmat",age:20},
+//     {name:"Eshmat",age:20},
+//     {name:"Eshmat",age:20},
+//     {name:"Eshmat",age:20},
+//     {name:"Eshmat",age:20},
+//     {name:"Eshmat",age:20},
+//     {name:"Eshmat",age:20},
+//     {name:"Eshmat",age:20},
+//     {name:"Eshmat",age:20},
+//     {name:"Eshmat",age:20},
+//     {name:"Eshmat",age:20},
+//     {name:"Eshmat",age:20},
+// ]
+// let data = {
+//     name:"Toshmat",
+// }
+// export default function getData(){
+//     console.log("Hiiii");
+// }
+// export{arr,data}
+
+
+let webbrain = {
+    frontend: [
+        { course: "react", price: 120 },
+        { course: "vue", price: 110 },
+        { course: "angular", price: 100 },
+    ],
+    backend: [
+        { course: "java", price: 120 },
+        { course: "php", price: 110 },
+        { course: "nodejs", price: 100 },
+    ],
+    mobile: {
+        android: [
+            { course: "android", price: 120 },
+            { course: "flutter", price: 110 },
+        ],
+        ios: [
+            { course: "ios", price: 120 },
+            { course: "flutter", price: 110 },
+        ],
+    },
+};
+
+function getData(data) {
+    let total = 0;
+
+    if (Array.isArray(data)) {
+        for (let valeu of data) {
+            total += valeu.price;
+        }
+    } else if (typeof data === "object") {
+        for (let key in data) {
+            total += getData(data[key]);
         }
     }
-getSumm(1)(2)()
+
+    return total;
+}
+
+console.log(getData(webbrain));
+
+let getFunk = (curry) => {
+    return (one) => {
+        if (one) {
+            return getFunk(curry + one)
+        }
+        return curry
+    }
+}
+console.log(getFunk(1)(2)(4)(7)(8)());
