@@ -47,7 +47,7 @@ function* getData(val){
     if(name){
       arr.push({ id: obj.next().value, name: name });
       setUser();
-      input.value = ""; // inputni tozalaydi
+      input.value = ""; 
     } 
   }
 
