@@ -55,4 +55,4 @@ let getFunk = (curry) => {
         return curry
     }
 }
-console.log(getFunk(1)(2)(4)(7)(8)());
+console.log(getFunk(1)(2)(4)(5)(6)());
