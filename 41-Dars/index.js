@@ -3,7 +3,7 @@ function addTask() {
     let task = input.value.trim();
   
     if (task === "") {
-      alert("Iltimos, vazifa yozing!");
+      alert("Mlumot kiting");
       return;
     }
   
@@ -22,11 +22,11 @@ function addTask() {
 
     let deleteBtn = document.createElement("button");
     deleteBtn.textContent = "❌";
-    deleteBtn.className = "delete-btn";
+    deleteBtn.className = "";
   
    
-    deleteBtn.onclick = function (event) {
-      event.stopPropagation(); 
+    deleteBtn.onclick = function (e) {
+      e.stopPropagation(); 
       li.remove();
     };
   
